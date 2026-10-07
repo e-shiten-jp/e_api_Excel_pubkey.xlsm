@@ -91,8 +91,8 @@
 	訂正・取消 	取消		cancel_order
 	訂正・取消 	一括取消		cancel_all_order
 	訂正・取消 	訂正		correct_order
-	株価		日足データ取得		get_CLMMfdsGetMarketPriceHistory
-	株価		スナップショット		get_CLMMfdsGetMarketPrice
+	株価		日足データ取得			get_CLMMfdsGetMarketPriceHistory
+	株価		スナップショット			get_CLMMfdsGetMarketPrice
 	マスター		1.株式銘柄マスタ問合取得		get_master_1_CLMStkGetIssueMstKabu
 	マスター		2.株式銘柄市場マスタ問合取得	get_master_2_CLMStkGetIssueSizyouMstKabu
 	マスター		3.先物銘柄マスタ問合取得		get_master_3_CLMStkGetIssueMstSak
