@@ -102,7 +102,7 @@
 	マスター	9.代用掛目情報問合取得		get_master_9_CLMStkGetDaiyouKakeme
 	マスター	10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
 	マスター	11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
-	マスター	12.保証金マスタ情報問合取得				get_master_12_CLMStkGetHosyoukinMst
+	マスター	12.保証金マスタ情報問合取得			get_master_12_CLMStkGetHosyoukinMst
 	マスター	13.取引所エラー等理由コード情報問合取得	get_master_13_CLMStkGetOrderErrReason
 	
  	（現在、マスターデータの更新に不具合が発生しており、誤った情報が記載されています。ご注意ください。）
