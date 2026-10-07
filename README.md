@@ -78,12 +78,12 @@
 	照会	照会_信用_新規建可能額	get_CLMZanShinkiKanoIjiritu
 	照会	照会_注文約定一覧	get_CLMOrderList
 	照会	照会_注文約定一覧_詳細	get_CLMOrderListDetail
-	現物	現物_買い注文	order_gen_buy
-	現物	現物_預り株一覧	get_CLMGenbutuKabuList
-	現物	現物_売り注文	order_gen_sell
+	現物	現物_買い注文		order_gen_buy
+	現物	現物_預り株一覧		get_CLMGenbutuKabuList
+	現物	現物_売り注文		order_gen_sell
 	信用	信用_新規_買い注文	order_shinki_buy
 	信用	信用_新規_売り注文	order_shinki_sell
-	信用	信用_建玉一覧	get_CLMShinyouTategyokuList
+	信用	信用_建玉一覧		get_CLMShinyouTategyokuList
 	信用	信用_返済_買い注文	order_hensai_buy
 	信用	信用_返済_売り注文	order_hensai_sell
 	信用	信用_返済_買い注文_個別指定	order_hensai_buy_aCLMKabuHensaiData
