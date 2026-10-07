@@ -97,8 +97,8 @@
 	マスター	4.オプション銘柄マスタ問合取得	get_master_4_CLMStkGetIssueMstOp
 	マスター	5.指数銘柄マスタ問合取得		get_master_5_CLMStkGetIssueMstIndex
 	マスター	6.為替銘柄マスタ問合取得		get_master_6_CLMStkGetIssueMstFx
-	マスター	7.日付情報問合取得			get_master_7_CLMStkGetDateZyouhou
-	マスター	8.呼値情報問合取得			get_master_8_CLMStkGetYobine
+	マスター	7.日付情報問合取得		get_master_7_CLMStkGetDateZyouhou
+	マスター	8.呼値情報問合取得		get_master_8_CLMStkGetYobine
 	マスター	9.代用掛目情報問合取得		get_master_9_CLMStkGetDaiyouKakeme
 	マスター	10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
 	マスター	11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
