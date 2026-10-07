@@ -1,8 +1,9 @@
+
 # Excel vbaでe支店APIを利用するサンプル 
 
-	ファイル名: e_api_Excel_VBA_api_sample_tel.xlsm
+	ファイル名: e_api_Excel_pubkey.xlsm
 	言語：Excel VBA
-	APIバージョン： V4r8で動作確認
+	APIバージョン： V4r10で動作確認
 
 ご注意！！ ================================
 
@@ -12,8 +13,16 @@
 
  十分に注意してご利用ください。
 
+	認証情報を含むファイルが第三者に渡った場合に、
+	認証情報を容易に復元できないようにするためのものです。
+	しかし万全ではありません。
+	
+	PC自体が不正アクセスを受けた場合等も含め、
+	利用者ご自身で適切なセキュリティ対策を行ってください。
+	
 =========================================
 
+	
 1）動作テストを実行した環境
 
 	os:  Windows 11 Pro 24H2
@@ -21,30 +30,31 @@
 
 ２）Excelの設定等
 
-	1.EXCELのメニューからファイル－＞オプション－＞リボンのユーザ設定で開発にチェックを入れる。結果メニューに「開発」が表示されます。
+	1.EXCELのメニューからファイル－＞オプション－＞リボンのユーザ設定で開発にチェックを入れる。
+	結果メニューに「開発」が表示されます。
+	
 	2.開発－＞Visual Basic を選択、標準モジュールに上記「３．提供ファイル」、2,3 のモジュールを追加します。
+	
 	3.VBA のメニュー「ツールー＞参照設定」で以下２つをチェック（参照設定）します。
 	  ・Microsoft XML, v6.0
 	  ・Microsoft Scripting Runtime
-	※EXCEL を新規にインストールした状態で動作確認をしておりますので、EXECEL の各種設定等を変更されている場合は初期状態に戻しご利用下さい。
+	※EXCEL を新規にインストールした状態で動作確認をしておりますので、
+	EXECELの各種設定等を変更されている場合は初期状態に戻しご利用下さい。
 
-	また、VBA での JSON 文字列解析に VBA-JSON v2.3.1（https://github.com/VBA-tools/VBA-JSON/releases/tag/v2.3.1）（MIT License）を利用しています。
+	また、VBA での JSON 文字列解析に 
+		VBA-JSON v2.3.1（https://github.com/VBA-tools/VBA-JSON/releases/tag/v2.3.1）（MIT License）
+	を利用しています。
 
 
-３）APIの利用には事前に立花証券ｅ支店に口座開設が必要です。
+３）APIの利用には、事前に立花証券ｅ支店に口座開設が必要です。
 
 
-４）利用時にシート「設定」に接続先等を入力してください。
-
-	api接続url
-	ログインＩＤ
-	ログイン用パスワード（第1）
-	注文用パスワード（第２）
-	sJsonOfmt（json表示形式）
-実際のurl、ご自身のユーザーID、パスワード等に変更してください。
-変更しない場合、正常に動作しません。
-   
-
+４）利用前に以下の手順書に従い準備してください。
+	
+	認証ID・秘密鍵等の取得方法.pdf
+	認証情報の暗号化などの事前準備.pdf
+	   
+	
 ５）利用の手順
 
 	・先ず「ログイン」実行してください。ログイン情報がログインシートに保存されます。
@@ -77,14 +87,21 @@
 	訂正・取消 一括取消	cancel_all_order
 	訂正・取消 訂正	correct_order
 	株価	日足データ取得		get_CLMMfdsGetMarketPriceHistory
-	株価	スナップショット	get_CLMMfdsGetMarketPrice
-	マスター	マスター_個別　株式銘柄	get_master_kobetu_CLMIssueMstKabu
-	マスター	マスター_個別　銘柄市場	get_master_kobetu_CLMIssueSizyouMstKabu
-	マスター	マスター_個別　先物	get_master_kobetu_CLMIssueMstSak
-	マスター	マスター_個別　OP	get_master_kobetu_CLMIssueMstOp
-	マスター	マスター_個別　指数、為替、その他	get_master_kobetu_CLMIssueMstOther
-	マスター	マスター_個別　取引所エラー理由コード	get_master_kobetu_CLMOrderErrReason
-	マスター	マスター_個別　日付情報	get_master_kobetu_CLMDateZyouhou
+	株価	スナップショット		get_CLMMfdsGetMarketPrice
+	マスター	1.株式銘柄マスタ問合取得		get_master_1_CLMStkGetIssueMstKabu
+	マスター	2.株式銘柄市場マスタ問合取得	get_master_2_CLMStkGetIssueSizyouMstKabu
+	マスター	3.先物銘柄マスタ問合取得		get_master_3_CLMStkGetIssueMstSak
+	マスター	4.オプション銘柄マスタ問合取得	get_master_4_CLMStkGetIssueMstOp
+	マスター	5.指数銘柄マスタ問合取得		get_master_5_CLMStkGetIssueMstIndex
+	マスター	6.為替銘柄マスタ問合取得		get_master_6_CLMStkGetIssueMstFx
+	マスター	7.日付情報問合取得			get_master_7_CLMStkGetDateZyouhou
+	マスター	8.呼値情報問合取得			get_master_8_CLMStkGetYobine
+	マスター	9.代用掛目情報問合取得		get_master_9_CLMStkGetDaiyouKakeme
+	マスター	10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
+	マスター	11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
+	マスター	12.保証金マスタ情報問合取得				get_master_12_CLMStkGetHosyoukinMst
+	マスター	13.取引所エラー等理由コード情報問合取得	get_master_13_CLMStkGetOrderErrReason
+	
  	（現在、マスターデータの更新に不具合が発生しており、誤った情報が記載されています。ご注意ください。）
 	（株式 銘柄マスタ（CLMIssueMstKabu）では、銘柄コード、銘柄名、銘柄名略称、銘柄名（カナ）、銘柄名（英語表記）、優先市場、業種コード、業種コード名 のみ利用できます。その他のデータについてはｅ支店サポートセンターにご確認ください。）
 
