@@ -88,24 +88,24 @@
 	信用	信用_返済_売り注文	order_hensai_sell
 	信用	信用_返済_買い注文_個別指定	order_hensai_buy_aCLMKabuHensaiData
 	信用	信用_返済_売り注文_個別指定	order_hensai_sell_aCLMKabuHensaiData
-	訂正・取消 取消	cancel_order
-	訂正・取消 一括取消	cancel_all_order
-	訂正・取消 訂正	correct_order
+	訂正・取消 	取消		cancel_order
+	訂正・取消 	一括取消	cancel_all_order
+	訂正・取消 	訂正		correct_order
 	株価	日足データ取得		get_CLMMfdsGetMarketPriceHistory
 	株価	スナップショット		get_CLMMfdsGetMarketPrice
-	マスター	1.株式銘柄マスタ問合取得		get_master_1_CLMStkGetIssueMstKabu
-	マスター	2.株式銘柄市場マスタ問合取得	get_master_2_CLMStkGetIssueSizyouMstKabu
-	マスター	3.先物銘柄マスタ問合取得		get_master_3_CLMStkGetIssueMstSak
-	マスター	4.オプション銘柄マスタ問合取得	get_master_4_CLMStkGetIssueMstOp
-	マスター	5.指数銘柄マスタ問合取得		get_master_5_CLMStkGetIssueMstIndex
-	マスター	6.為替銘柄マスタ問合取得		get_master_6_CLMStkGetIssueMstFx
-	マスター	7.日付情報問合取得		get_master_7_CLMStkGetDateZyouhou
-	マスター	8.呼値情報問合取得		get_master_8_CLMStkGetYobine
-	マスター	9.代用掛目情報問合取得		get_master_9_CLMStkGetDaiyouKakeme
-	マスター	10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
-	マスター	11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
-	マスター	12.保証金マスタ情報問合取得			get_master_12_CLMStkGetHosyoukinMst
-	マスター	13.取引所エラー等理由コード情報問合取得	get_master_13_CLMStkGetOrderErrReason
+	マスター		1.株式銘柄マスタ問合取得		get_master_1_CLMStkGetIssueMstKabu
+	マスター		2.株式銘柄市場マスタ問合取得	get_master_2_CLMStkGetIssueSizyouMstKabu
+	マスター		3.先物銘柄マスタ問合取得		get_master_3_CLMStkGetIssueMstSak
+	マスター		4.オプション銘柄マスタ問合取得	get_master_4_CLMStkGetIssueMstOp
+	マスター		5.指数銘柄マスタ問合取得		get_master_5_CLMStkGetIssueMstIndex
+	マスター		6.為替銘柄マスタ問合取得		get_master_6_CLMStkGetIssueMstFx
+	マスター		7.日付情報問合取得		get_master_7_CLMStkGetDateZyouhou
+	マスター		8.呼値情報問合取得		get_master_8_CLMStkGetYobine
+	マスター		9.代用掛目情報問合取得		get_master_9_CLMStkGetDaiyouKakeme
+	マスター		10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
+	マスター		11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
+	マスター		12.保証金マスタ情報問合取得			get_master_12_CLMStkGetHosyoukinMst
+	マスター		13.取引所エラー等理由コード情報問合取得	get_master_13_CLMStkGetOrderErrReason
 	
  	（現在、マスターデータの更新に不具合が発生しており、誤った情報が記載されています。ご注意ください。）
 	（株式 銘柄マスタ（CLMIssueMstKabu）では、銘柄コード、銘柄名、銘柄名略称、銘柄名（カナ）、銘柄名（英語表記）、優先市場、業種コード、業種コード名 のみ利用できます。その他のデータについてはｅ支店サポートセンターにご確認ください。）
