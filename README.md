@@ -105,7 +105,7 @@
 	マスター		10.株式銘柄別・市場別規制情報問合取得		get_master_10_CLMStkGetIssueSizyouKiseiKabu
 	マスター		11.派生銘柄別・市場別規制情報問合取得		get_master_11_CLMStkGetIssueSizyouKiseiHasei
 	マスター		12.保証金マスタ情報問合取得			get_master_12_CLMStkGetHosyoukinMst
-	マスター		13.取引所エラー等理由コード情報問合取得	get_master_13_CLMStkGetOrderErrReason
+	マスター		13.取引所エラー等理由コード情報問合取得		get_master_13_CLMStkGetOrderErrReason
 	
  	（現在、マスターデータの更新に不具合が発生しており、誤った情報が記載されています。ご注意ください。）
 	（株式 銘柄マスタ（CLMIssueMstKabu）では、銘柄コード、銘柄名、銘柄名略称、銘柄名（カナ）、銘柄名（英語表記）、優先市場、業種コード、業種コード名 のみ利用できます。その他のデータについてはｅ支店サポートセンターにご確認ください。）
